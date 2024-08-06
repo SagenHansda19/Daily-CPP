@@ -14,5 +14,6 @@ int main()
      {
           sum+=arr[i];
      }
+     cout
      return 0;
 }
