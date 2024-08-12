@@ -10,7 +10,7 @@ long long sum_of_multiple(long long x, long long n)
                                 by x so int his case k=3 and x=3 and when 
                                 we multiply is means 3(1+2+3)=18 which is 
                                 multiple of 3 with 1,2,3 respectively and
-                                also sums it up*/
+                                also sums it up */
 }
 
 
