@@ -21,7 +21,7 @@ int main(){
         cin >> n;
         long long sum = sum_of_multiple(3,n) + sum_of_multiple(5,n) - sum_of_multiple(15,n);    
                /* we exclude multiples of 15 because it it includes multiples
-               of 3 and multiples of 5 so we remove it from the sum*/
+               of 3 and multiples of 5 so we remove it from the sum and end*/
         cout<<sum<<endl;
     }
     return 0;
