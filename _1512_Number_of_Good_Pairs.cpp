@@ -30,4 +30,5 @@ int main(){
      }
      cout<<sol.numIdenticalPairs(nums);
      return 0;
+     //jk
 }
