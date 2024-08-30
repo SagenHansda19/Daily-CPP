@@ -28,16 +28,13 @@ int main(){
     int n;
     cin>>n;
     vector<int> res = sol.shuffle(nums, n);
-    // cout << "[";
-    // for(int i=0; res.size() > 0 && i<res.size(); i++){
-    //     cout << res[i];
-    //     if(i != res.size()-1){
-    //         cout << ", ";
-    //     }
-    // }
-    // cout<<"]";
-    for(auto num : res){
-        cout << num << " ";
+    cout << "[";
+    for(int i=0; res.size() > 0 && i<res.size(); i++){
+        cout << res[i];
+        if(i != res.size()-1){
+            cout << ", ";
+        }
     }
+    cout<<"]";
     return 0;
 }
