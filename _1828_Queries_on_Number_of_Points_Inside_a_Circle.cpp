@@ -12,7 +12,7 @@ public:
           for(auto x : queries){
                int count = 0;
                for(auto y : points){
-                    if(sqrt((x[0] - y[0])*(x[0] - y[0]) + (x[1] - y[1])*(x[1] - y[1])) <= x[2]){
+                    if(sqrt((x[0] - y[0])*(x[0] - y[0]) + (x[1] - y[1])*(x[1] - y[1])) <= x[2]){ //checks
                          count++;
                     }
                }
