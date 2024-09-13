@@ -19,7 +19,7 @@ int main(){
           cout<<"CHAT WITH HER!"<<endl;
      }
      else{
-          cout<<"IGNORE HIM!"<<endl;
+          cout<<"IGNORE HIM!"<<endl;//test 
      }
      return 0;
 }
