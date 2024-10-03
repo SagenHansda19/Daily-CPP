@@ -26,10 +26,10 @@ int main(){
      vector<int> res = sol.arrayRankTransform(arr);
      cout << "[";
      for(int i=0; res.size() > 0 && i<res.size(); i++){
-         cout << res[i];
-         if(i != res.size()-1){
-             cout << ", ";
-         }
+          cout << res[i];
+          if(i != res.size()-1){
+               cout << ", ";
+          }
      }
      cout<<"]";
 }
