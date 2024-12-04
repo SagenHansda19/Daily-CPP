@@ -14,6 +14,13 @@ void solve() {
 	cout << cost << endl;
 }
 
+void solve() {
+	int n, m, a, b;
+	cin >> n >> m >> a >> b;
+	cout << min((n * a), ((n / m) * b + min((n % m) * a, b))) << '\n';
+}
+
+
 int main(){
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
