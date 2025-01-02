@@ -1,3 +1,6 @@
+#include<bits/stdc++.h>
+using namespace std;
+
 class Solution {
 public:
      string reverseVowels(string s) {
@@ -23,3 +26,13 @@ public:
           return s;
      }
 };
+
+int main() {
+	ios_base :: sync_with_stdio(false);
+	cin.tie(NULL);
+	Solution sol;
+	string s;
+	cin >> s;
+	cout << sol.reverseVowels(s);
+	return 0;
+}
