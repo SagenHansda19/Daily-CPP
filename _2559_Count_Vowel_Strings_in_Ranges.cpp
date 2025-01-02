@@ -3,9 +3,8 @@ using namespace std;
 
 class Solution {
 private:
-    bool is_vow(char& c) {
-        unordered_set<char> vow = {'a', 'e', 'i', 'o', 'u'};
-        return vow.find(c) != vow.end();
+    bool is_vow(char c) {
+        return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u';
     }
     bool is_good(string& s) {
         int n = s.length();
