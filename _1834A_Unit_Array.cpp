@@ -3,18 +3,15 @@ using namespace std;
 
 void solve() {
     int n; cin >> n;
-    vector<int> a(n);
-    for(int &i : a) cin >> i;
-    vector<int> b(2, 0);
-    for(int i : a) {
-        if(i == 1) b[0]++;
-        else b[1]++;
+    int x = 0, y = 0;
+    for(int i = 0; i < n; i++) {
+        int a; cin >> a;
+        if(a == 1) x++;
+        else y++;
     }
-    if(b[0] >= b[1] && b[1] % 2 == 0) {
-        cout << "0\n";
-        return;
-    }
-    cout << max(abs(b[0] - b[1]), 1) << '\n';
+    int ans = 0;
+    while(!(x - y >= 0 && y % 2 == 0)) y--, x++, ans++;
+    cout << ans << '\n';
 }
 
 int main(){
