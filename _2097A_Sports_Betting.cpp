@@ -23,13 +23,13 @@ void solve() {
     for (int &i : a) cin >> i;
     sort(a.begin(), a.end());
     int v = 0;
-    for (int i = 2; i < n - 1; i++) {
-        if (v && a[i] == a[i + 1]) {
-            cout << "Yes\n";
-            return;
-        }
+    for (int i = 1; i < n; i++) {
         if (a[i] - a[i - 1] > 1) {
             v = 0;
+        }
+        if (v && a[i] == a[i + 1] && i < n - 1) {
+            cout << "Yes\n";
+            return;
         }
         if (a[i] == a[i - 1]) {
             v = 1;
